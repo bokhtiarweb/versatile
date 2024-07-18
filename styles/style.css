@@ -358,7 +358,7 @@ p.runner_desc{
     background-blend-mode: overlay;
 }
 p.name_text{
-   text-align: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 576px) {
