@@ -225,10 +225,11 @@ p.small_text_2{
 h1.habit_title{
     margin-bottom: 5px;
 }
-p.desc_color{
+p.habit_header_desc{
     color: #ffffff50;
     font-weight: 400;
     max-width: 70%;
+    margin: auto;
 }
 .habit_box{
     margin: 50px auto;
@@ -286,7 +287,7 @@ p.runner_desc{
 /* Training section styled */
 .training{
     max-width: 1060px;
-    margin: 50px auto;
+    margin: 85px auto;
 }
 .training_title{
     margin-bottom: 0px;
@@ -301,59 +302,36 @@ p.runner_desc{
     display: grid;
     grid-template-columns: 350px repeat(1, 351px 1fr);
 }
-.trainer_item_1{
+.trainer_item_1, .trainer_item_2, .trainer_item_3, .trainer_item_4, .trainer_item_5, .trainer_item_6{
     width: 100%;
     height: 214px;
-    background-image: url('../images/exercise1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.trainer_item_1{
+    background-image: url('../images/exercise1.jpg');
     background-color: #00ffff57;
     background-blend-mode: overlay;
 }
 .trainer_item_2{
-    width: 100%;
-    height: 214px;
     background-image: url('../images/exercise2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     background-color: #ff00004f;
     background-blend-mode: overlay;
 }
 .trainer_item_3{
-    width: 100%;
-    height: 214px;
     background-image: url('../images/exercise3.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .trainer_item_4{
-    width: 100%;
-    height: 214px;
     background-image: url('../images/exercise4.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .trainer_item_5{
-    width: 100%;
-    height: 214px;
     background-image: url('../images/exercise5.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     background-color: #00800078;
     background-blend-mode: overlay;
 }
 .trainer_item_6{
-    width: 100%;
-    height: 214px;
     background-image: url('../images/exercise6.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     background-color: #0000ff54;
     background-blend-mode: overlay;
 }
@@ -366,7 +344,7 @@ p.name_text{
 }
 .calculator_header{
     max-width: 670px;
-    margin: 70px auto;
+    margin: 70px auto 50px auto;
 }
 .calculator_container{
     max-width: 1440px;
@@ -444,6 +422,134 @@ section option{
 input::placeholder{
     color: #FFFFFF99;
 }
+/* Teams section styled */
+.teams{
+    padding-top: 30px;
+    max-width: 1440px;
+}
+.team_container{
+    max-width: 1060px;
+    margin: 0px auto;
+}
+.team_header{
+    text-align: center;
+}
+h1.team_header_title{
+    margin-bottom: 0px;
+}
+.team_box{
+    margin: 85px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 0px;
+}
+.team_item_1, .team_item_2, .team_item_3, .team_item_4, .team_item_5, .team_item_6{
+    width: 31.3%;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 18px;
+}
+.trainer_text{
+    width: 80%;
+    height: auto;
+    text-align: start;
+    position: relative;
+    top: 60%;
+    bottom: 0px;
+    left: 20px;
+}
+.trainer_text h5{
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.trainer_text p{
+    margin-top: 0px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.team_item_1{
+    background-image: url('../images/trainer1.png');
+}
+.team_item_2{
+    background-image: url('../images/trainer2.png');
+}
+.team_item_3{
+    background-image: url('../images/trainer3.png');
+}
+.team_item_4{
+    background-image: url('../images/trainer4.png');
+}
+.team_item_5{
+    background-image: url('../images/trainer5.png');
+}
+.team_item_6{
+    background-image: url('../images/trainer6.png');
+}
+.footer_section{
+    max-width: 1440px;
+}
+.footer_container{
+    max-width: 1060px;
+    height: 300px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_left{
+    width: 49%;
+}
+.footer_middle, .footer_right{
+    width: 25.3%;
+}
+h1.footer_left_title{
+    color: #E6533C;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+p.footer_desc{
+    width: 85%;
+}
+.footer_menu, .right_footer_menu{
+    padding-left: 1px;
+}
+.footer_menu li,  .right_footer_menu li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+h2.footer_middle_title{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.footer_menu li a,  .right_footer_menu li a{
+    color: #FFFFFF80;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.footer_menu li a:hover{
+    text-decoration: underline;
+}
+.right_footer_menu li a:hover{
+    text-decoration: underline;
+}
+.footer_bootom {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    margin: 30px auto;
+    padding: 25px;
+    border-top: 1px solid #FFFFFF1A;
+}
+
 
 @media screen and (max-width: 576px) {
     nav.top_nav{display: none;}
@@ -568,4 +674,17 @@ section option{
 input::placeholder{
     font-size: 1.3rem;
 }
+.team_box{
+    flex-direction: row;
+}
+.team_item_1, .team_item_2, .team_item_3, .team_item_4, .team_item_5, .team_item_6{
+    width: 98%;
+}
+.footer_left{
+    width: 100%;
+}
+.footer_middle, .footer_right{
+    width: 100%;
+}
+
 }
