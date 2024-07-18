@@ -165,7 +165,7 @@ span.glass_text_1{
     height: 80px;
     position: relative;
     top: 145px;
-    left: 240px;
+    left: 185px;
 }
 p.small_text{
     font-size: 0.7rem;
@@ -360,6 +360,90 @@ p.runner_desc{
 p.name_text{
     text-align: center;
 }
+/* BMI section styled */
+.calculator{
+    max-width: 1440px;
+}
+.calculator_header{
+    max-width: 670px;
+    margin: 70px auto;
+}
+.calculator_container{
+    max-width: 1440px;
+    padding: 30px 10px;
+    background-color: #8080802b;
+}
+.two_column{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.calulator_title{
+    margin-bottom: 0px;
+}
+h2.chart_title, h2.form_title{
+    text-align: start;
+    color: #FFFFFF;
+}
+table{
+    margin-top: 60px;
+}
+table, th, td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    color: #fff
+}
+th{
+    color: #ffffffc7;
+    font-size: 1.2rem;
+}
+td{
+    color: #ffffff6b;
+    font-size: 0.8rem;
+}
+td, th{
+    padding: 20px;
+}
+.chart_section, .form_secton{
+    width: 50%;
+}
+h2.form_title{
+    margin-bottom: 0px;
+}
+form.input_form{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.input_form input[type='text'], .input_form select:not(#select_factor){
+    width: 33%;
+    padding: 12px 40px 12px 40px;
+    background-color: #FFFFFF1A;
+    border: none;
+    border-radius: 5px;
+}
+.input_form select#select_option{
+    width: 48%;
+}
+.input_form select#select_factor{
+    width: 98%;
+    padding: 12px 40px 12px 40px;
+    background-color: #FFFFFF1A;
+    border: none;
+    border-radius: 5px;
+}
+select{
+    color: #FFFFFF99;
+}
+section option{
+    background-color: #E6533C;
+}
+input::placeholder{
+    color: #FFFFFF99;
+}
 
 @media screen and (max-width: 576px) {
     nav.top_nav{display: none;}
@@ -441,4 +525,47 @@ p.name_text{
     .trainer_box_2{
         grid-template-columns: repeat(2, 1fr) 0;
     }
+    p.desc_color{
+        font-size: 1.6rem;
+        font-weight: 400;
+        max-width: 100%;
+    }
+    .two_column{
+        flex-direction: column;
+    }
+    .chart_section, .form_secton{
+        width: 100%;
+    }
+    td{
+        font-size: 1.2rem;
+    }
+    .form_secton{
+        margin-top: 50px;
+    }
+    form.input_form{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .input_form input[type='text'], .input_form select:not(#select_factor){
+        width: 26%;
+    }
+    .input_form select#select_option{
+        width: 47%;
+    }
+    .input_form select#select_factor{
+        width: 97%;
+    }
+    
+select{
+    font-size: 1.3rem;
+}
+section option{
+    font-size: 1.3rem;
+}
+input::placeholder{
+    font-size: 1.3rem;
+}
 }
