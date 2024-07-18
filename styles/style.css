@@ -10,10 +10,23 @@
 /* shared styled */
 .btn_bg{
     background-color: #E6533C;
+    border: none;
+    margin-top: 28px;
+    padding: 16px 46px 16px 46px;
+    border-radius: 42px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
 }
 .desc_color{
     color: #ffffff50;
     font-weight: 400;
+}
+.title_color{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 900;
 }
 /* header secton styled */
 .top_header{
@@ -125,10 +138,7 @@ p.banner_desc{
     display: flex;
     justify-content: space-around;
 }
-.join_btn{
-    border: none;
-}
-.join_btn, .blank_btn{
+.blank_btn{
     margin-top: 28px;
     padding: 16px 46px 16px 46px;
     border-radius: 42px;
@@ -184,6 +194,7 @@ p.small_text{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background: #E6533C;
 }
 p.small_text_2{
     font-size: 0.7rem;
@@ -212,15 +223,11 @@ p.small_text_2{
     text-align: center;
 }
 h1.habit_title{
-    color: #FFFFFF;
-    font-size: 3rem;
-    font-weight: 900;
     margin-bottom: 5px;
 }
 p.desc_color{
     color: #ffffff50;
     font-weight: 400;
-    display: inline-block;
     max-width: 70%;
 }
 .habit_box{
@@ -248,7 +255,35 @@ p.habit_desc{
     height: 231px;
     border-radius: 50%;
 }
-
+/* Runner section styled */
+.runner{
+    max-width: 1044px;
+    margin: 50px auto;
+    padding: 15px;
+    display: flex;
+    background-color: #80808033;
+    border-radius: 18px;
+}
+h1.runner_title{
+    margin-bottom: 0px;
+}
+p.runner_desc{
+    margin-top: 10px;
+}
+.left_runner{
+    width: 65%;
+    padding: 15px;
+}
+.right_runner{
+    width: 30%;
+    height: 330px;
+    background-image: url('../images/run.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 18px;
+}
+/* Training section styled */
 
 @media screen and (max-width: 576px) {
     nav.top_nav{display: none;}
@@ -268,7 +303,7 @@ p.habit_desc{
     .header_btn{
         justify-content: space-between;
     }
-    .join_btn, .blank_btn{
+    .btn_bg, .blank_btn{
         padding: 16px 40px 16px 40px;
         font-weight: 600;
         font-size: 1.2rem;
@@ -308,5 +343,20 @@ p.habit_desc{
     p.habit_desc{
         font-size: 1.2rem;
         color: #ffffffba;
+    }
+    .runner{
+        flex-direction: column;
+    }
+    .left_runner{
+        width: 100%;
+    }
+    .right_runner{
+        width: 100%;
+        margin-top: 30px;
+    }
+    p.runner_desc{
+        width: 100%;
+        line-height: 24px;
+        font-size: 1.3rem;
     }
 }
