@@ -284,6 +284,82 @@ p.runner_desc{
     border-radius: 18px;
 }
 /* Training section styled */
+.training{
+    max-width: 1060px;
+    margin: 50px auto;
+}
+.training_title{
+    margin-bottom: 0px;
+}
+.trainer_box_1{
+    display: grid;
+    grid-template-columns: repeat(1, 250px 1fr) 300px;
+    margin-top: 50px;
+}
+
+.trainer_box_2{
+    display: grid;
+    grid-template-columns: 350px repeat(1, 351px 1fr);
+}
+.trainer_item_1{
+    width: 100%;
+    height: 214px;
+    background-image: url('../images/exercise1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #00ffff57;
+    background-blend-mode: overlay;
+}
+.trainer_item_2{
+    width: 100%;
+    height: 214px;
+    background-image: url('../images/exercise2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ff00004f;
+    background-blend-mode: overlay;
+}
+.trainer_item_3{
+    width: 100%;
+    height: 214px;
+    background-image: url('../images/exercise3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.trainer_item_4{
+    width: 100%;
+    height: 214px;
+    background-image: url('../images/exercise4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.trainer_item_5{
+    width: 100%;
+    height: 214px;
+    background-image: url('../images/exercise5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #00800078;
+    background-blend-mode: overlay;
+}
+.trainer_item_6{
+    width: 100%;
+    height: 214px;
+    background-image: url('../images/exercise6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #0000ff54;
+    background-blend-mode: overlay;
+}
+p.name_text{
+   text-align: center;
+}
 
 @media screen and (max-width: 576px) {
     nav.top_nav{display: none;}
@@ -358,5 +434,11 @@ p.runner_desc{
         width: 100%;
         line-height: 24px;
         font-size: 1.3rem;
+    }
+    .trainer_box_1{
+        grid-template-columns: repeat(2, 1fr) 0;
+    }
+    .trainer_box_2{
+        grid-template-columns: repeat(2, 1fr) 0;
     }
 }
