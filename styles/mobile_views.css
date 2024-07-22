@@ -1,0 +1,214 @@
+@media screen and (max-width: 576px) {
+    nav.top_nav{display: none;}
+    /* Mobile navbar */
+nav.mobile_menu{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav.mobile_menu > .logo{
+    width: 50%;
+}
+nav.mobile_menu > .mobile_navbar{
+    width: 85px;
+    position: relative;
+}
+.mobile_menu_div{
+    height: 50px;
+}
+.menu_btn{
+    width: 85px;
+    height: 50px;
+    background-color: #ccc;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+ul.ul_mobile_menu{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-color: rgba(98, 127, 182, 0.643);
+    display: none;
+}
+ul.ul_mobile_menu li{
+    padding: 15px 5px;
+}
+.mobile_menu_div:hover ul.ul_mobile_menu{
+    display: block;
+}
+.ul_mobile_menu{
+    display: none;
+ }
+/* heaer banner section styled */
+    .header_banner{
+        flex-direction: column;
+    }
+    h1.banner_title{
+        font-size: 2.8rem;
+        line-height: 1.5;
+    }
+    p.banner_desc{
+        font-size: 1.5rem;
+    }
+    .header_btn{
+        justify-content: space-between;
+    }
+    .btn_bg, .blank_btn{
+        padding: 16px 40px 16px 40px;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    span.mobile_none{
+        display: none;
+    }
+    span.glass_text_1{
+        top: 70px;
+        left: 206px;
+    }
+    p.small_text{
+        font-size: 0.88rem;
+    }
+    .glass_text_2{
+        top: 160px;
+        left: 10px;
+    }
+    p.small_text_2{
+        font-size: 0.88rem;
+        color: #fffffff0;
+    }
+    .right_content{
+        margin-top: 48px;
+    }
+    /* Habit section styled */
+    .habit_box{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 40px 5px;
+    }
+    p.habit_header_desc{
+        max-width: 90%;
+        font-size: 1.3rem;
+        color: #ffffff85
+    }
+    p.habit_desc{
+        color: #ffffffba;
+    }
+    /* Student section styled */
+    .students_box{
+        flex-direction: column;
+    }
+    .student_item_1, .student_item_2, .student_item_3,.student_item_4, .student_item_5, .student_item_6{
+        width: 100%;
+        height: 280px;
+        text-align: center;
+    }
+    .student_item_1:hover, .student_item_2:hover,.student_item_3:hover, .student_item_4:hover, .student_item_5:hover,.student_item_6:hover{
+        background-color: #00000091;
+        background-blend-mode: overlay;
+        transform: none;
+    }
+    .student_item_1:hover .student_text,
+    .student_item_2:hover .student_text,
+    .student_item_3:hover .student_text,
+    .student_item_4:hover .student_text,
+    .student_item_5:hover .student_text,
+    .student_item_6:hover .student_text{
+        transition: 1s;
+        margin: 20% auto;
+        opacity: 1;
+        display: block;
+    }
+    /* Runner section styled */
+    .runner{
+        flex-direction: column;
+    }
+    .left_runner{
+        width: 100%;
+    }
+    .right_runner{
+        width: 100%;
+        margin-top: 30px;
+    }
+    p.runner_desc{
+        width: 100%;
+        line-height: 24px;
+        font-size: 1.3rem;
+    }
+    .runner_btn{
+        font-size: 1.3rem;
+        width: 92%;
+    }
+    /* service section styled */
+    .service_box{
+        flex-direction: column;
+    }
+    /* Trainer section styled */
+    .trainer_box_1{
+        grid-template-columns: repeat(2, 1fr) 0;
+    }
+    .trainer_box_2{
+        grid-template-columns: repeat(2, 1fr) 0;
+    }
+    p.desc_color{
+        font-size: 1.6rem;
+        font-weight: 400;
+        max-width: 100%;
+    }
+    /* BMI section styled */
+    .two_column{
+        flex-direction: column;
+    }
+    .chart_section, .form_secton{
+        width: 100%;
+    }
+    td{
+        font-size: 1.5rem;
+    }
+    .form_secton{
+        margin-top: 50px;
+    }
+    form.input_form{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .input_form input[type='text'], .input_form select:not(#select_factor){
+        width: 26%;
+    }
+    .input_form select#select_option{
+        width: 47%;
+    }
+    .input_form select#select_factor{
+        width: 97%;
+    }
+    
+select{
+    font-size: 1.3rem;
+}
+section option{
+    font-size: 1.3rem;
+}
+input::placeholder{
+    font-size: 1.3rem;
+}
+.calculator_btn{
+    width: 98%;
+    font-size: 1.3rem;
+}
+/* Team section styled */
+.team_box{
+    flex-direction: row;
+}
+.team_item_1, .team_item_2, .team_item_3, .team_item_4, .team_item_5, .team_item_6{
+    width: 98%;
+}
+/* Habit section styled */
+.footer_container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+}

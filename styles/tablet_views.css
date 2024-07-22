@@ -1,0 +1,28 @@
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .header_banner{
+        flex-direction: column;
+    }
+    .header_btn{
+        justify-content: left;
+    }
+    .right_content{
+        margin: 0px auto;
+    }
+    span.glass_text_1{
+        top: 68px;
+        left: 198px;
+    }
+    span.glass_text_2{
+        top: 255px;
+        left: 0px;
+    }
+    .student_item_1:hover, .student_item_2:hover,.student_item_3:hover, .student_item_4:hover, .student_item_5:hover, .student_item_6:hover{
+        background-color: #00000091;
+        background-blend-mode: overlay;
+        transform: none;
+    }
+    .input_form input[type='text']:not(#select_factor){
+        width: 29%;
+    }
+}
