@@ -49,7 +49,18 @@ a.logo_text{
 ul.menu{
     display: flex;
 }
-.nav_item{list-style: none;}
+.nav_item{
+    list-style: none;
+    padding: 7px 0px;
+    border-radius: 46px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.7s;
+    z-index: 3;
+}
+.nav_item:first-child{
+    background-color: #E6533C;
+}
 .nav_item:not(:last-child){
     margin-right: 40px;
 }
@@ -58,11 +69,12 @@ a.nav_link{
     font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
-}
-a.btn_bg{
-    border-radius: 46px;
     padding: 8px 20px;
 }
+.top_nav li.nav_item:hover{
+    background-color: #E6533C;
+}
+
 /* mobile menu styled */
 nav.mobile_menu{
     display: none;
@@ -91,7 +103,9 @@ p.banner_desc{
 .header_btn{
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 }
+
 .blank_btn{
     margin-top: 28px;
     padding: 16px 46px 16px 46px;
@@ -99,12 +113,23 @@ p.banner_desc{
     font-size: 1.2rem;
     color: #ffffff;
     font-weight: 600;
-    cursor: pointer;
-}
-.blank_btn{
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
     margin-left: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.join_btn{
+    transition: 0.7s;
+}
+.blank_btn:hover{
+    background-color: #E6533C;
+    border: 1px solid transparent;
+}
+.join_btn:hover{
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+
 }
 span.glass_text_1{
     color: #FFFFFF;
@@ -372,6 +397,7 @@ p.runner_desc{
     height: 250px;
     padding: 6px;
     overflow: hidden;
+    position: relative;
     transition: 0.3s;
 }
 .card_back {

@@ -37,9 +37,12 @@ ul.ul_mobile_menu li{
 .mobile_menu_div:hover ul.ul_mobile_menu{
     display: block;
 }
+.nav_item:first-child{
+    background-color: transparent;
+}
 .ul_mobile_menu{
     display: none;
- }
+}
 /* heaer banner section styled */
     .header_banner{
         flex-direction: column;
