@@ -149,6 +149,7 @@ ul.ul_mobile_menu li{
     }
     .left_runner{
         width: 100%;
+        margin-left: 0px;
     }
     .right_runner{
         width: 100%;
@@ -161,7 +162,7 @@ ul.ul_mobile_menu li{
     }
     .runner_btn{
         font-size: 1.3rem;
-        width: 100%;
+        width: 87%;
         box-sizing: border-box;
     }
     /* service section styled */
