@@ -1,8 +1,12 @@
 @media screen and (max-width: 576px) {
-    nav.top_nav{display: none;}
-    /* Mobile navbar */
+.top_header{ 
+    padding: 0px 10px;
+}
+nav.top_nav{display: none;}
+/* Mobile navbar */
 nav.mobile_menu{
     margin: 50px auto;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -23,6 +27,10 @@ nav.mobile_menu > .mobile_navbar{
     position: absolute;
     right: 0px;
     top: 0px;
+}
+.fa-solid {
+    font-weight: 900;
+    font-size: 1.5rem;
 }
 ul.ul_mobile_menu{
     position: absolute;
@@ -45,7 +53,11 @@ ul.ul_mobile_menu li{
 }
 /* heaer banner section styled */
     .header_banner{
+        padding: 0px 10px;
         flex-direction: column;
+    }
+    .right_content{
+        width: 100%;
     }
     h1.banner_title{
         font-size: 2.8rem;
@@ -58,7 +70,7 @@ ul.ul_mobile_menu li{
         justify-content: space-between;
     }
     .btn_bg, .blank_btn{
-        padding: 16px 40px 16px 40px;
+        padding: 15px 20px;
         font-weight: 600;
         font-size: 1.2rem;
     }
@@ -89,6 +101,10 @@ ul.ul_mobile_menu li{
         justify-items: center;
         align-items: center;
         gap: 40px 5px;
+        padding: 0px 10px;
+    }
+    .habit_header{  
+        padding: 0px 10px;
     }
     p.habit_header_desc{
         max-width: 90%;
@@ -99,6 +115,9 @@ ul.ul_mobile_menu li{
         color: #ffffffba;
     }
     /* Student section styled */
+    .student_container{
+        padding: 0px 10px;
+    }
     .students_box{
         flex-direction: column;
     }
@@ -126,6 +145,7 @@ ul.ul_mobile_menu li{
     /* Runner section styled */
     .runner{
         flex-direction: column;
+        padding: 0px 10px;
     }
     .left_runner{
         width: 100%;
@@ -141,27 +161,46 @@ ul.ul_mobile_menu li{
     }
     .runner_btn{
         font-size: 1.3rem;
-        width: 92%;
+        width: 100%;
+        box-sizing: border-box;
     }
     /* service section styled */
     .service_box{
         flex-direction: column;
     }
     /* Trainer section styled */
+    .service_header{
+        padding: 0px 10px;
+    }
+    .trainer_two_boxes{
+        padding: 0px 10px;
+    }
     .trainer_box_1{
-        grid-template-columns: repeat(2, 1fr) 0;
+        grid-template-columns: 55% repeat(1, 45% 1fr) 0;
+        overflow: hidden;
     }
     .trainer_box_2{
-        grid-template-columns: repeat(2, 1fr) 0;
+        grid-template-columns: 45% repeat(1, 55% 1fr) 0;
+        overflow: hidden;
     }
     p.desc_color{
         font-size: 1.6rem;
         font-weight: 400;
         max-width: 100%;
     }
+    /* Training section styled */
+    .trainer_header{
+        padding: 0px 10px;
+    }
     /* BMI section styled */
-    .two_column{
+    .calculator_container{
+        padding: 0px 10px;
+    }
+    .tow_column{
         flex-direction: column;
+    }
+    .calculator_header{
+        padding: 0px 10px;
     }
     .chart_section, .form_secton{
         width: 100%;
@@ -180,7 +219,7 @@ ul.ul_mobile_menu li{
         gap: 10px;
     }
     .input_form input[type='text'], .input_form select:not(#select_factor){
-        width: 26%;
+        width: 27%;
     }
     .input_form select#select_option{
         width: 47%;
@@ -206,12 +245,18 @@ input::placeholder{
 .team_box{
     flex-direction: row;
 }
-.team_item_1, .team_item_2, .team_item_3, .team_item_4, .team_item_5, .team_item_6{
-    width: 98%;
+.team_container{
+    padding: 0px 10px;
 }
-/* Habit section styled */
+.team_item_1, .team_item_2, .team_item_3, .team_item_4, .team_item_5, .team_item_6{
+    width: 100%;
+}
+/* Footer section styled */
 .footer_container{
     grid-template-columns: repeat(1, 1fr);
+}
+.footer_left, .footer_middle, .footer_right{
+    padding: 0px 10px;
 }
 
 }

@@ -1,5 +1,8 @@
 
 @media screen and (min-width: 576px) and (max-width: 992px){
+    .top_header{ 
+        padding: 0px 10px;
+    }
     .header_banner{
         flex-direction: column;
     }
@@ -17,12 +20,50 @@
         top: 255px;
         left: 0px;
     }
+    .habit_header{  
+        padding: 0px 10px;
+    }
+    .habit_box{
+        padding: 0px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .habit_content{
+        width: 58%;
+        border: 1px solid red;
+    }
+    .student_container{
+        padding: 0px 10px;
+    }
     .student_item_1:hover, .student_item_2:hover,.student_item_3:hover, .student_item_4:hover, .student_item_5:hover, .student_item_6:hover{
         background-color: #00000091;
         background-blend-mode: overlay;
         transform: none;
     }
     .input_form input[type='text']:not(#select_factor){
-        width: 29%;
+        width: 29.6%;
+    }
+    .trainer_two_boxes{
+        padding: 0px 10px;
+    }
+    .runner{
+        padding: 0px 10px;
+    }
+    .runner{
+        margin: 60px auto 0px auto;
+    }
+    .trainer_header{
+        padding: 0px 10px;
+    }
+    table, h2.chart_title{
+        margin-left: 10px;
+    }
+    
+    .team_container{
+        padding: 0px 10px;
+    }
+    .footer_left, .footer_middle, .footer_right{
+        padding: 0px 10px;
     }
 }
