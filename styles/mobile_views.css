@@ -162,7 +162,7 @@ ul.ul_mobile_menu li{
     }
     .runner_btn{
         font-size: 1.3rem;
-        width: 87%;
+        width: 100%;
         box-sizing: border-box;
     }
     /* service section styled */
@@ -260,4 +260,30 @@ input::placeholder{
     padding: 0px 10px;
 }
 
+}
+
+
+@media screen and (max-width: 400px) {
+    .btn_bg, .blank_btn{
+        padding: 10px 16px;
+    }
+    span.glass_text_1{
+        width: 150px;
+        font-size: 35px;
+        top: 70px;
+        left: 160px;
+    }
+    .glass_text_1 p.small_text{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .input_form input[type='text'], .input_form select:not(#select_factor){
+        width: 100%;
+    }
+    .input_form select#select_option{
+        width: 100%;
+    }
+    .input_form select#select_factor{
+        width: 100%;
+    }
 }
