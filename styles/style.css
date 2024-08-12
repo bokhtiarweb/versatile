@@ -9,7 +9,6 @@
 span.different_font{
     font-family: "Playwrite CU", cursive;
 }
-
 /* shared styled */
 .btn_bg{
     background-color: #E6533C;
@@ -554,19 +553,25 @@ form.input_form{
     flex-wrap: wrap;
     gap: 10px;
 }
-.input_form input[type='text'], .input_form select:not(#select_factor){
-    width: 33%;
-    padding: 12px 40px 12px 40px;
+.input_form .equal{
+    width: 50%;
+}
+.input_form input[type='text'], .input_form select#select_option, .input_form select:not(#select_factor){
+    width: 199px;
+    height: 24px;
+    padding: 12px 40px 12px 20px;
     background-color: #FFFFFF1A;
     border: none;
     border-radius: 5px;
 }
 .input_form select#select_option{
-    width: 48%;
+    width: 260px;
+    height: 48px;
 }
 .input_form select#select_factor{
-    width: 98%;
-    padding: 12px 40px 12px 40px;
+    width: 577px;
+    height: 48px;
+    padding: 12px 40px 12px 20px;
     background-color: #FFFFFF1A;
     border: none;
     border-radius: 5px;

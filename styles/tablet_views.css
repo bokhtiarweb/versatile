@@ -40,9 +40,6 @@
         background-blend-mode: overlay;
         transform: none;
     }
-    .input_form input[type='text']:not(#select_factor){
-        width: 29.6%;
-    }
     .trainer_two_boxes{
         padding: 0px 10px;
     }
@@ -55,10 +52,25 @@
     .trainer_header{
         padding: 0px 10px;
     }
-    table, h2.chart_title{
+    .tow_column{
+        flex-direction: column;
+    }
+    .chart_section, .form_secton{
         margin-left: 10px;
     }
-    
+    .form_secton{
+        width: 97.2%;
+        margin-top: 45px;
+    }
+    .input_form input[type='text'], .input_form select#select_option, .input_form select:not(#select_factor){
+        width: 368px;
+    }
+    .input_form select#select_option{
+        width: 428px;
+    }
+    .input_form select#select_factor{
+        width: 866px;
+    }
     .team_container{
         padding: 0px 10px;
     }
