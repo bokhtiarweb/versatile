@@ -67,7 +67,7 @@ ul.ul_mobile_menu li{
         font-size: 1.5rem;
     }
     .header_btn{
-        justify-content: space-between;
+        justify-content: start;
     }
     .btn_bg, .blank_btn{
         padding: 15px 20px;
@@ -226,7 +226,7 @@ ul.ul_mobile_menu li{
         width: 47.5%;
     }
     .input_form select#select_factor{
-        width: 99%;
+        width: 98%;
     }
     
 select{

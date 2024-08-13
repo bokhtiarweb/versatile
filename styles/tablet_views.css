@@ -1,16 +1,19 @@
-
 @media screen and (min-width: 576px) and (max-width: 992px){
     .top_header{ 
         padding: 0px 10px;
     }
+    .logo{
+        margin-left: 15px;
+    }
     .header_banner{
+        margin: 0px 70px;
         flex-direction: column;
     }
     .header_btn{
         justify-content: left;
     }
     .right_content{
-        margin: 0px auto;
+        margin: 100px auto;
     }
     span.glass_text_1{
         top: 68px;
